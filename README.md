@@ -1,32 +1,54 @@
 # Site de Venda de Produtos
 
-Site de vendas de produtos desenvolvido em HTML e CSS, com uma base de back-end em Spring Boot (Java) para evolução futura. Projeto da disciplina do Web Academy, desenvolvido com issues e commits referenciados.
+Página de vendas feita com **HTML e CSS**, com uma base de back-end em **Spring Boot** para evolução futura. Projeto da disciplina do Web Academy (UFAC), desenvolvido com issues e commits referenciados.
 
-## 🚀 Como visualizar
+## Funcionalidades atuais
 
-Abra o arquivo `index.html` no navegador.
+- Página inicial com mensagem de boas-vindas.
+- Lista de produtos à venda (notebook, mouse, fone e cabo HDMI).
+- Back-end Spring Boot criado a partir do Spring Initializr, ainda sem endpoints.
 
-## 🧱 Tecnologias
+## Tecnologias
 
-- HTML5 e CSS3 (front-end)
-- Java + Spring Boot + Maven (base do back-end em `back-end/webacademy`)
+| Parte | Tecnologias |
+| --- | --- |
+| Front-end | HTML5, CSS3 |
+| Back-end | Java 25, Spring Boot 4.1, Maven (Maven Wrapper incluído) |
 
-## 📂 Estrutura
+## Estrutura
 
 ```text
 projeto_vendas/
-├── index.html
-├── bluestyle.css
+├── index.html               # Página inicial
+├── bluestyle.css            # Estilos
 ├── back-end/
-│   └── webacademy/      # projeto Spring Boot (Maven)
+│   └── webacademy/          # Projeto Spring Boot (Maven)
+├── LICENSE
 └── README.md
 ```
 
-## ▶️ Rodando o back-end (opcional)
+## Como executar
+
+### Front-end
+
+Abra o arquivo `index.html` no navegador. Não há dependências para instalar.
+
+### Back-end (opcional)
+
+Requer JDK 25 instalado.
 
 ```bash
 cd back-end/webacademy
 ./mvnw spring-boot:run
 ```
 
-Requer JDK instalado.
+No Windows, use `mvnw.cmd spring-boot:run`.
+
+## Próximos passos
+
+- Criar a entidade de produtos e os endpoints da API no back-end.
+- Integrar a página com a API para listar os produtos.
+
+## Autor e licença
+
+Desenvolvido por **Jonas Sousa**. Distribuído sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE).
